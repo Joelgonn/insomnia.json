@@ -1,0 +1,68 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2024-12-23T00:00:00.000Z",
+  "__export_source": "insomnia.desktop.app:v2024.1.0",
+  "resources": [
+    {
+      "_id": "req_versiculo",
+      "parentId": "fld_biblia",
+      "modified": 0,
+      "created": 0,
+      "url": "http://localhost:5000/versiculo/{{livro}}/{{capitulo}}/{{versiculo}}",
+      "name": "Buscar Versículo",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": 0,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_biblia",
+      "parentId": null,
+      "modified": 0,
+      "created": 0,
+      "name": "Biblia API",
+      "description": "",
+      "_type": "request_group"
+    },
+    {
+      "_id": "env_biblia",
+      "parentId": null,
+      "modified": 0,
+      "created": 0,
+      "name": "Base Environment",
+      "data": {
+        "livro": "joao",
+        "capitulo": "3",
+        "versiculo": "16"
+      },
+      "dataPropertyOrder": {
+        "&": ["livro", "capitulo", "versiculo"]
+      },
+      "color": null,
+      "isPrivate": false,
+      "metaSortKey": 0,
+      "_type": "environment"
+    },
+    {
+      "_id": "wrk_biblia",
+      "parentId": null,
+      "modified": 0,
+      "created": 0,
+      "name": "Biblia Versiculos API",
+      "description": "",
+      "_type": "workspace"
+    }
+  ]
+}
